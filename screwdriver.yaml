@@ -12,6 +12,7 @@ jobs:
         requires: [~commit, ~pr]
     job3:
         steps:
+          - sd: echo $SD_TOKEN
           - echo: sleep 100
         requires: [~commit, ~pr]
     notblocked:
